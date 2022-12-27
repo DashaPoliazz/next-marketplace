@@ -1,0 +1,40 @@
+.tag {
+  display: inline-block;
+
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  margin-right: 5px;
+  padding: 5px 12px;
+}
+
+.ghost {
+  border: 1px solid #ebebeb;
+  border-radius: 20px;
+}
+
+.grey {
+  background: #b3c0d9;
+  border-radius: 20px;
+  color: var(--white);
+}
+
+.green {
+  background: #c8f8e4;
+  border-radius: 20px;
+  color: #1dc47e;
+}
+
+.red {
+  color: var(--white);
+  border-radius: 20px;
+  background: #de0000;
+}
+
+.purple {
+  color: #7653fc;
+  border: 1px solid #7653fc;
+  border-radius: 20px;
+}

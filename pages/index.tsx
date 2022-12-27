@@ -1,6 +1,7 @@
 import Button from "../components/Button/Button";
 import Htag from "../components/Htag/Htag";
 import Paragraph from "../components/Paragraph/Paragraph";
+import Tag from "../components/Tag/Tag";
 
 export default function Home() {
   return (
@@ -18,6 +19,8 @@ export default function Home() {
         }
         size={"m"}
       />
+      <Tag children={"Photoshop"} color="ghost" />
+      <Tag children={"Tag"} color="red" />
     </>
   );
 }
