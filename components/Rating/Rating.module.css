@@ -1,0 +1,10 @@
+.filled {
+  fill: #7653fc;
+}
+
+.star {
+  cursor: pointer;
+  margin-right: 5px;
+
+  transition: 0.3s all linear;
+}

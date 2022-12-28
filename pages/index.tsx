@@ -1,9 +1,14 @@
+import { useState } from "react";
 import Button from "../components/Button/Button";
 import Htag from "../components/Htag/Htag";
 import Paragraph from "../components/Paragraph/Paragraph";
+import Rating from "../components/Rating/Rating";
 import Tag from "../components/Tag/Tag";
+import { withMainLayout } from "../layout/MainLayout/MainLayout";
 
-export default function Home() {
+function Home() {
+  const [rating, setRating] = useState(4);
+
   return (
     <>
       <Htag tag="h1">Text</Htag>
@@ -21,6 +26,14 @@ export default function Home() {
       />
       <Tag children={"Photoshop"} color="ghost" />
       <Tag children={"Tag"} color="red" />
+      <Rating
+        maxRating={5}
+        rating={rating}
+        onRatingChange={setRating}
+        isEditable={true}
+      />
     </>
   );
 }
+
+export default withMainLayout(Home);
